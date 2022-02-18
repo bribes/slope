@@ -48,7 +48,6 @@ var UnityLoader = UnityLoader || {
         function r(n) {
             r.called || (r.called = !0, e.indexedDB = n, t.complete())
         }
-
         try {
             var n = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB,
                 o = n.open("/idbfs-test");
