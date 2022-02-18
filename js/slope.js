@@ -139,17 +139,17 @@ var UnityLoader = UnityLoader || {
             return n.canvas = document.createElement("canvas"), n.canvas.style.width = "100%", n.canvas.style.height = "100%", n.canvas.addEventListener("contextmenu", function (e) {
                 e.preventDefault()
             }), n.canvas.id = "#canvas", e.appendChild(n.canvas), r.compatibilityCheck(r, function () {
-
-                if (document.domain.includes("faav.tk")) {
+console.log(document.domain + "/slope_newframework.unityweb");
+                if (document.domain.includes("faav.tk") == true) {
                   var o = {
                       "companyName": "IDnet",
                       "productName": "Slope Unblocked Game",
-                      "dataUrl": document.domain + "/slope_newdata.unityweb",
-                      "wasmCodeUrl": document.domain + "/slope_newwasmcode.unityweb",
-                      "wasmFrameworkUrl": document.domain + "/slope_newwasmframework.unityweb",
-                      "asmCodeUrl": document.domain + "/slope_newcode.unityweb",
-                      "asmMemoryUrl": document.domain + "/slope_newmemory.unityweb",
-                      "asmFrameworkUrl": document.domain + "/slope_newframework.unityweb",
+                      "dataUrl": "./slope_newdata.unityweb",
+                      "wasmCodeUrl": "./slope_newwasmcode.unityweb",
+                      "wasmFrameworkUrl": "./slope_newwasmframework.unityweb",
+                      "asmCodeUrl": "./slope_newcode.unityweb",
+                      "asmMemoryUrl": "./slope_newmemory.unityweb",
+                      "asmFrameworkUrl": "./slope_newframework.unityweb",
                       "TOTAL_MEMORY": 268435456,
                       "graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
                       "webglContextAttributes": {"preserveDrawingBuffer": false},
