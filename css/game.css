@@ -15,12 +15,6 @@ body > div {
     margin: auto;
 }
 
-.webgl-content .footer .fullscreen {
-    background-image: url(../images/fullscreen.png);
-    width: 38px;
-    float: right;
-}
-
 .webgl-content * {
     border: 0;
     margin: 0;
@@ -86,6 +80,10 @@ body > div {
 .webgl-content .footer .fullscreen {
     width: 38px;
     float: right;
+}
+
+.fullscreen {
+    background-image: url(../images/fullscreen.png);
 }
 
 #gameContainer {
