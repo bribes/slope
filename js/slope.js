@@ -140,20 +140,38 @@ var UnityLoader = UnityLoader || {
                 e.preventDefault()
             }), n.canvas.id = "#canvas", e.appendChild(n.canvas), r.compatibilityCheck(r, function () {
 
-                var o = {
-                    "companyName": "IDnet",
-                    "productName": "Slope Unblocked Game",
-                    "dataUrl": "slope/slope_newdata.unityweb",
-                    "wasmCodeUrl": "slope/slope_newwasmcode.unityweb",
-                    "wasmFrameworkUrl": "slope/slope_newwasmframework.unityweb",
-                    "asmCodeUrl": "slope/slope_newcode.unityweb",
-                    "asmMemoryUrl": "slope/slope_newmemory.unityweb",
-                    "asmFrameworkUrl": "slope/slope_newframework.unityweb",
-                    "TOTAL_MEMORY": 268435456,
-                    "graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
-                    "webglContextAttributes": {"preserveDrawingBuffer": false},
-                    "splashScreenStyle": "Dark",
-                    "backgroundColor": "#231F21"
+                if (document.domain.includes("faav.tk")) {
+                  var o = {
+                      "companyName": "IDnet",
+                      "productName": "Slope Unblocked Game",
+                      "dataUrl": "/slope_newdata.unityweb",
+                      "wasmCodeUrl": "/slope_newwasmcode.unityweb",
+                      "wasmFrameworkUrl": "/slope_newwasmframework.unityweb",
+                      "asmCodeUrl": "/slope_newcode.unityweb",
+                      "asmMemoryUrl": "/slope_newmemory.unityweb",
+                      "asmFrameworkUrl": "/slope_newframework.unityweb",
+                      "TOTAL_MEMORY": 268435456,
+                      "graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+                      "webglContextAttributes": {"preserveDrawingBuffer": false},
+                      "splashScreenStyle": "Dark",
+                      "backgroundColor": "#231F21"
+                  }
+                } else {
+                   var o = {
+                      "companyName": "IDnet",
+                      "productName": "Slope Unblocked Game",
+                      "dataUrl": "slope/slope_newdata.unityweb",
+                      "wasmCodeUrl": "slope/slope_newwasmcode.unityweb",
+                      "wasmFrameworkUrl": "slope/slope_newwasmframework.unityweb",
+                      "asmCodeUrl": "slope/slope_newcode.unityweb",
+                      "asmMemoryUrl": "slope/slope_newmemory.unityweb",
+                      "asmFrameworkUrl": "slope/slope_newframework.unityweb",
+                      "TOTAL_MEMORY": 268435456,
+                      "graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+                      "webglContextAttributes": {"preserveDrawingBuffer": false},
+                      "splashScreenStyle": "Dark",
+                      "backgroundColor": "#231F21"
+                  }
                 }
                 for (var a in o) "undefined" == typeof n[a] && (n[a] = o[a]);
                 for (var i = !1, s = 0; s < n.graphicsAPI.length; s++) {
