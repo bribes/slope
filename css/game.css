@@ -88,6 +88,7 @@ body > div {
     width: 7.5%;
     top: 45%;
     background-size: 3.5rem 3.5rem;
+    cursor: pointer;
 }
 
 #gameContainer {
